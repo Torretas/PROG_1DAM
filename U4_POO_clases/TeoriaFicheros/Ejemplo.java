@@ -1,4 +1,4 @@
-package Teoria;
+package TeoriaFicheros;
 
 public class Ejemplo {
 

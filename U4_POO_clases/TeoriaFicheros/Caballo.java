@@ -1,4 +1,4 @@
-package Teoria;
+package TeoriaFicheros;
 
 /**
  * The type Caballo.

@@ -1,4 +1,4 @@
-package Teoria;
+package TeoriaFicheros;
 
 import java.util.Scanner;
 

@@ -1,4 +1,4 @@
-package Teoria.Serializacion;
+package TeoriaFicheros.Serializacion;
 
 import java.io.*;
 import java.util.ArrayList;

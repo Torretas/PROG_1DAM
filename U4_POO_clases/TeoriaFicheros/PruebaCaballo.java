@@ -1,4 +1,4 @@
-package Teoria;
+package TeoriaFicheros;
 
 public class PruebaCaballo {
     public static void main(String[] args) {
