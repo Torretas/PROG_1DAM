@@ -124,3 +124,37 @@ public interface UsuarioRepository extends JpaRepository<Usuario, Long> {
 | **Spring Data JPA**       | Muy alto      | CRUD casi sin escribir código, integración     | Menor control directo sobre las consultas   |
 
 En proyectos modernos con Java, se tiende a utilizar **JPA/Hibernate** junto con **Spring Data JPA** debido a su simplicidad y productividad. Sin embargo, entender JDBC sigue siendo fundamental para comprender los fundamentos del acceso a datos.
+
+# 🟦 Primeros pasos
+
+### 📚 Documentación de referencia
+
+Para una consulta más detallada, considera las siguientes secciones:
+
+- [Documentación oficial de Apache Maven](https://maven.apache.org/guides/index.html)
+- [Guía de referencia del plugin Maven de Spring Boot](https://docs.spring.io/spring-boot/3.4.4/maven-plugin)
+- [Crear una imagen OCI](https://docs.spring.io/spring-boot/3.4.4/maven-plugin/build-image.html)
+- [Spring Data JPA](https://docs.spring.io/spring-boot/3.4.4/reference/data/sql.html#data.sql.jpa-and-spring-data)
+- [Spring Web](https://docs.spring.io/spring-boot/3.4.4/reference/web/servlet.html)
+
+---
+
+### 🧪 Guías prácticas
+
+Las siguientes guías ilustran cómo utilizar algunas funcionalidades de forma concreta:
+
+- [Acceder a datos con JPA](https://spring.io/guides/gs/accessing-data-jpa/)
+- [Acceder a datos con MySQL](https://spring.io/guides/gs/accessing-data-mysql/)
+- [Construir un servicio web RESTful](https://spring.io/guides/gs/rest-service/)
+- [Servir contenido web con Spring MVC](https://spring.io/guides/gs/serving-web-content/)
+- [Desarrollar servicios REST con Spring](https://spring.io/guides/tutorials/rest/)
+
+---
+
+### ⚙️ Reemplazos heredados en el `parent` de Maven
+
+Debido al diseño de Maven, los elementos se heredan desde el `POM` padre al `POM` del proyecto.  
+Aunque la mayoría de esta herencia es adecuada, también se heredan elementos no deseados como `<license>` y `<developers>` desde el padre.
+
+Para evitarlo, el `POM` del proyecto contiene sobrescrituras vacías para estos elementos.  
+Si cambias manualmente a otro `parent` y deseas mantener dicha herencia, deberás eliminar esas sobrescrituras.
