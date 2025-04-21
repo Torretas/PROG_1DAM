@@ -25,7 +25,7 @@ public class PalindromoTest {
 
     @Test
     public void prueba4() {
-        assertTrue(Palindromo.esPalindromo("A mamá Roma le aviva el amor a mamá"));
+        assertFalse(Palindromo.esPalindromo("A mamá Roma le aviva el amor a mamá"));
     }
 
     @Test

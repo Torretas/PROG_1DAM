@@ -3,6 +3,7 @@ package JSON;
 public class Usuario {
     private String nombre;
     private String email;
+    private int edad;
 
     public Usuario() {
     }
@@ -10,6 +11,12 @@ public class Usuario {
     public Usuario (String nombre, String email) {
         this.nombre = nombre;
         this.email = email;
+    }
+
+    public Usuario(String nombre, String email, int edad) {
+        this.nombre = nombre;
+        this.email = email;
+        this.edad = edad;
     }
 
     // Getters y Setters
