@@ -40,4 +40,8 @@ public class Usuario {
                 ", email='" + email + '\'' +
                 '}';
     }
+
+    public int getEdad() {
+        return edad;
+    }
 }
