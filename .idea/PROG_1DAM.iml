@@ -17,6 +17,7 @@
       <sourceFolder url="file://$MODULE_DIR$/Repaso30dias" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/U5_Almacenamiento_Files_BD" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/0pruebas0" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/U6_Java Spring Boot_Microservicios" isTestSource="false" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
