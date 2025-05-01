@@ -43,6 +43,6 @@ public class PalindromoTest {
 
     @AfterAll
     public static void mostrarNotaTotal() {
-        System.out.println("Nota final: " + notaTotal);
+        System.out.println("\nNota final: " + notaTotal);
     }
 }
