@@ -13,7 +13,7 @@ public class PalindromoTest {
 
     @Test
     public void prueba1() {
-        assertTrue(Palindromo.esPalindromo("anita lava la tin"));
+        assertTrue(Palindromo.esPalindromo("anita lava la tina"));
         notaTotal += 2;
     }
 

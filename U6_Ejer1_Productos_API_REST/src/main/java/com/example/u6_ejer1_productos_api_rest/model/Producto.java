@@ -1,7 +1,21 @@
 package com.example.u6_ejer1_productos_api_rest.model;
 
+import jakarta.persistence.*;
+
+/*
+* @Entity: marca la clase como entidad JPA
+* @Table(name = "Productos"): especifica el nombre de la tabla en la BD
+* @Id: marca el campo id como clave primaria
+* @GeneratedValue(strategy= GenerationType.IDENTITY): configura la generación automática del ID
+*
+* */
+@Entity
+@Table(name = "Productos")
 public class Producto {
-    private int id;
+
+    @Id
+    @GeneratedValue(strategy= GenerationType.IDENTITY)
+    private Integer id;
     private String nombre;
     private double precio;
 

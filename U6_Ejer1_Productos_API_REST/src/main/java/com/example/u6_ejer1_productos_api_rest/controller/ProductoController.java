@@ -1,13 +1,19 @@
 package com.example.u6_ejer1_productos_api_rest.controller;
 
 import com.example.u6_ejer1_productos_api_rest.model.Producto;
+import com.example.u6_ejer1_productos_api_rest.repository.ProductoRepository;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.ArrayList;
 import java.util.List;
 
 @RestController
+//@RequestMapping()
 public class ProductoController {
+
+    @Autowired
+    private ProductoRepository productoRepository;
 
     private List<Producto> productos = new ArrayList<>();
     private int idCounter = 0;
@@ -23,6 +29,11 @@ public class ProductoController {
     @GetMapping("/productos")
     public List<Producto> obtenerProductos() {
         return productos;
+    }
+
+    @GetMapping
+    public List<Producto> obtenerTodos() {
+        return productoRepository.findAll();
     }
 
     @PostMapping("/producto")
