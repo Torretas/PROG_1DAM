@@ -4,6 +4,7 @@ import com.example.u6_ejer1_productos_api_rest.model.Producto;
 import com.example.u6_ejer1_productos_api_rest.repository.ProductoRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
+import org.springframework.web.util.UriComponentsBuilder;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -31,6 +32,7 @@ public class ProductoController {
         return productos;
     }
 
+    // Adaptación tras emplear Spring Data JPA
     @GetMapping
     public List<Producto> obtenerTodos() {
         return productoRepository.findAll();
@@ -41,6 +43,13 @@ public class ProductoController {
         producto.setId(idCounter++);
         productos.add(producto);
         return producto;
+    }
+
+    // Adaptación del metodo de crearProducto
+    @PostMapping
+    public Producto crearProducto2(@RequestBody Producto producto) {
+        Producto nuevoProducto = productoRepository.save(producto);
+        return nuevoProducto;
     }
 
     /*
@@ -60,9 +69,25 @@ public class ProductoController {
         return null;
     }
 
+    // Adaptación del metodo actualizarProducto
+    @PutMapping("/{id}")
+    public Producto actualizarProducto2(@PathVariable Integer id, @RequestBody Producto productoActualizado) {
+
+        productoActualizado.setId(id);
+        productoActualizado.setPrecio(productoActualizado.getPrecio());
+        return productoRepository.save(productoActualizado);
+
+    }
+
     @DeleteMapping("/producto/{id}")
     public void eliminarProducto(@PathVariable int id) {
         productos.removeIf(producto -> producto.getId() == id);
+    }
+
+    // Adaptación Delete
+    @DeleteMapping("/{id}")
+    public void eliminarProducto2(@PathVariable Integer id) {
+        productoRepository.deleteById(id);
     }
 
 }
