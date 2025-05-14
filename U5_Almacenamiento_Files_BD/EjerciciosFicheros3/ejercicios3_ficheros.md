@@ -36,3 +36,12 @@ Implementa un programa que lea un documento de texto y muestre por pantalla algu
 - `{"casa", 10}`
 
 Son pares `<String,Integer>` que asocian una palabra (clave) con un nº entero (valor).
+
+### Ejercicio 8. El centro de la Tierra
+
+Crea una clase llamada `ExploradorArchivos` que realice las siguientes operaciones:
+
+- Listar todos los archivos y carpetas contenidos en la ruta "/resources/explorador/"
+- Hacer 10 copias de un archivo, por ejemplo copiar.txt (debes crearlo) y que las copias se encuentren en la carpeta
+- Crear una estructura de subdirectorios dentro de "/resources/explorador/" que tenga la siguiente forma:
+  - "/resources/explorador/volcan/descenso/aprobar/programacion/ y dentro de ella debe contener un archivo llamado "centroTierra.txt"
