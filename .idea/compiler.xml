@@ -6,6 +6,7 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="API_REST_Libreria" />
         <module name="U6_Ej2_API_Cursos" />
         <module name="U6_Ejer1_Productos_API_REST" />
       </profile>
@@ -16,6 +17,7 @@
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="API_REST_Libreria" options="-parameters" />
       <module name="U6_Ej2_API_Cursos" options="-parameters" />
       <module name="U6_Ejer1_Productos_API_REST" options="-parameters" />
       <module name="U6_Java_Spring_Boot_Microservicios" options="-parameters" />
