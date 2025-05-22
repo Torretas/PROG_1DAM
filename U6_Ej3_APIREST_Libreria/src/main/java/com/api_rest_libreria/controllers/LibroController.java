@@ -32,7 +32,7 @@ public class LibroController {
     public Libro actualizarLibro(@PathVariable Long id, @RequestBody Libro nuevoLibro) {
         Libro libro = libroRepo.findById(id).orElseThrow();
         libro.setTitulo(nuevoLibro.getTitulo());
-        libro.setAnioPublicacion(nuevoLibro.getAnioPublicacion());
+        libro.setAnoPublicacion(nuevoLibro.getAnoPublicacion());
         libro.setAutor(nuevoLibro.getAutor());
         libro.setEditorial(nuevoLibro.getEditorial());
         return libroRepo.save(libro);
