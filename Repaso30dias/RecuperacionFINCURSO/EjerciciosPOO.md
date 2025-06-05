@@ -20,3 +20,31 @@ Prueba en `PruebaEmpleado`
 
 Crea una interfaz `Dibujable` con un método `dibujar`. Luego, crea una clase ´Rectangulo´ que implemente esa interfaz y defina el método.
 Prueba en `PruebaDibujable`
+
+Ejercicio 5. Ejercicio de Programación Orientada a Objetos con JSON
+
+Crea una aplicación Java que permita gestionar distintos tipos de trabajadores: empleados por cuenta ajena y autónomos. La aplicación debe aplicar los pilares de la programación orientada a objetos (herencia, encapsulamiento, polimorfismo e interfaz) y persistir los datos en un fichero JSON.
+
+Requisitos:
+
+1. Herencia: crea una clase base Trabajador con atributos comunes y clases derivadas Empleado y Autonomo.
+
+2. Encapsulamiento: atributos private con sus respectivos getters y setters.
+
+3. Polimorfismo: método calcularIRPF() definido de forma distinta en cada subclase.
+
+4. Interfaz: crea una interfaz Imprimible con el método mostrarResumen().
+
+5. Persistencia: guarda y carga los datos desde un fichero JSON usando una librería como Jackson o Gson.
+
+Funcionalidades mínimas:
+
+Añadir trabajador
+
+Listar trabajadores
+
+Calcular IRPF
+
+Guardar en JSON
+
+Salir
